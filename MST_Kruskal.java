@@ -1,17 +1,8 @@
 import java.util.PriorityQueue;
 import java.util.Comparator;
 import java.util.ArrayList;
-class Edge{
-	int u, v, w; 
-	// vertex u and v
-	// w is the weight of the edge (u,v)
-	Edge(int i, int j, int k){
-		u = i; v = j ; w = k;
-	}
-	public String toString(){
-		return "(" + u + ", " + v + ") and weight = " + w;
-	}
-}
+
+/*need Edge.java to be in the same directory in which this file is */
 
 class EdgeComparator implements Comparator<Edge>{
 	public int compare(Edge e1, Edge e2){
